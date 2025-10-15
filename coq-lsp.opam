@@ -43,8 +43,8 @@ depends: [
   "ocamlfind" { >= "1.9.8" }
 
   # Rocq
-  "rocq-core"          { >= "9.1" < "9.2"  }
-  "rocq-stdlib"        { >= "9" & with-test }
+  "rocq-core"          { >= "9.1" < "9.2" | = "dev" }
+  "rocq-stdlib"        { >= "9" & with-test | = "dev" }
 
   # serlib deps
   "ppx_deriving"        { >= "5.2"                 }
